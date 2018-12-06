@@ -345,3 +345,14 @@ def smoPK(dataMatIn, classLabels, C, toler, maxIter):    #full Platt SMO
         elif (alphaPairsChanged == 0): entireSet = True  
         print("iteration number: %d" % iter)
     return oS.b,oS.alphas
+
+
+if __name__ == '__main__':
+    # data_arr, labels = loadDataSet('testSet.txt')
+    # b, alphas = smoP(data_arr, labels, 0.6, 0.001, 40)
+    # ws = calcWs(alphas, data_arr, labels)
+    # data_mat = mat(data_arr)
+    # print(data_mat[0])
+    # print(labels[0])
+    # print(data_mat[0] * mat(ws) + b)
+    testRbf()
